@@ -1,0 +1,15 @@
+body {
+
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px white;
+  }
+
+  .jumbotron{
+    background: url("https://journals.physiology.org/pb-assets/images/custom-pages/Disease-Day-Collections/COVID19/COVID19-2.jpg") no-repeat center center; 
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: cover;
+}
