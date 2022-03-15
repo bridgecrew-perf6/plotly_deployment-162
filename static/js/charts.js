@@ -94,9 +94,7 @@ function buildCharts(sample) {
     ];
     // 9. Create the layout for the bar chart. 
     var barLayout = {
-      title: "Top 10 Bacterial Cultures Found",
-      xaxis: {title: "Sample Values"},
-      yaxis: {title: "ID's"}     
+      title: "Top 10 Bacterial Cultures Found",  
     };
     // 10. Use Plotly to plot the data with the layout. 
     Plotly.newPlot("bar",barData, barLayout);    
@@ -126,13 +124,13 @@ function buildCharts(sample) {
     
     // Use Plotly to plot the bubble data and layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
-   
-    
+
+
     // 4. Create the trace for the gauge chart.
     var gaugeData = [{
       domain: { x: [0, 1], y: [0, 1] },
       value: washfrq,
-      title: { text: "Belly Button Washing Frequency" },
+      title: { text: "Belly Button Washing Frequency <br><span style='font-size:1.0em;color:gray'>Scrubs Per Week</span>" },
       type: "indicator",
       mode: "gauge+number",
       gauge: {
